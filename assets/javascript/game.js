@@ -4,7 +4,7 @@ var crystalTwo = Math.floor(Math.random() * 12) +1;
 var crystalThree = Math.floor(Math.random() * 12) +1;
 var crystalFour = Math.floor(Math.random() * 12) +1;
 
-var randomNumber = Math.floor(Math.random() * 120 - 19 + 1) + 19;
+var randomNumber = Math.floor(Math.random() * (120 - 19)) + 19;
 
 var totalScore = 0;
 
@@ -64,6 +64,6 @@ function resetgame() {
     crystalTwo = Math.floor(Math.random() * 12) +1;
     crystalThree = Math.floor(Math.random() * 12) +1;
     crystalFour = Math.floor(Math.random() * 12) +1;
-    randomNumber = Math.floor(Math.random() * 120 - 19 + 1) + 19;
+    randomNumber = Math.floor(Math.random() * (120 - 19)) + 19;
     $(".random-number").text("Random Number: " + (randomNumber));
 }
