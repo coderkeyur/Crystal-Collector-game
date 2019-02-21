@@ -49,10 +49,12 @@ function checkscore () {
     if (totalScore === randomNumber) {
         wins++;
         $("#win-count").text ("Win Count: " + (wins));
+        alert("You win");
         resetgame();
     } else if (totalScore > randomNumber) {
         loss++;
         $("#loss-count").text ("Loss Count: " + (loss));
+        alert("You Lose!")
         resetgame();
     }
 }
